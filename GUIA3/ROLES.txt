@@ -1,0 +1,111 @@
+ROLES: 
+	LIBROS: 
+		OPCIONES: 
+			*GESTIONAR LIBRO
+			*GESTIONAR AUTORID, GENEROID, EDITORIALID
+				-- AGREGAR (insert)
+				-- LEER	   (select) 
+			*GESTIONAR AUTORID
+				-- AGREGAR  (insert)
+				-- LEER	    (select) 
+			*GESTIONAR  GENEROID
+				-- AGREGAR  (insert)
+				-- LEER     (select)
+			*GESTIONAR PROVEEDOR
+				-- AGREGAR    (insert)
+				-- LEER       (select) 
+				-- ACTUALIZAR  (update)
+			*GESTIONAR EDITORIALID
+				-- AGREGAR    (insert)
+				-- LEER       (select) 
+				-- ACTUALIZAR (update)
+			*GESTIONAR TITULO, ANIOPUBLICACION
+				-- LEER 
+			*GESTIONAR TITULO 
+				-- LEER 
+			*GESTIONAR ANIOPUBLICACION
+				-- LEER 
+			
+	CLIENTES:
+		OPCIONES: 
+			*GESTIONAR NOMBRE, APELLIDO, DIRECCION, EMAIL, TELEFONO
+				-- AGREGAR (insert)
+				-- LEER	   (select) 
+				-- ACTUALIZAR (update)
+			*GESTIONAR NOMBRE
+				-- AGREGAR  (insert)
+				-- LEER	    (select) 
+				-- ACTUALIZAR (update)
+			*GESTIONAR APELLIDO
+				-- AGREGAR  (insert)
+				-- LEER     (select)
+				-- ACTUALIZAR (update)
+			*GESTIONAR DIRECCION
+				-- AGREGAR  (insert)
+				-- LEER     (select)
+				-- ACTUALIZAR (update)
+			*GESTIONAR EMAIL
+			-- AGREGAR  (insert)
+			-- LEER     (select)
+			-- ACTUALIZAR (update)
+			*GESTIONAR TELEFONO
+			-- AGREGAR  (insert)
+			-- LEER     (select)
+			-- ACTUALIZAR (update)
+EMPLEADOS:	
+		OPCIONES:
+			*GESTIONAR EMPLEADOS
+			*GESTIONAR NOMBRE,APELLLIDO, CARGO, EMAIL, TELEFONO 
+				-- AGREGAR    (insert)
+				-- LEER       (select) 
+				-- ACTUALIZAR (update)
+				ROLES:
+				-- AGREGAR    (insert)
+				-- LEER       (select) 
+				-- ACTUALIZAR (update)
+			
+	PRESTAMOS:	
+		OPCIONES:
+			*GESTIONAR PRESTAMOS 
+				ROLES:
+				-- AGREGAR    (insert)
+				-- LEER       (select) 
+				-- ACTUALIZAR (update)
+			*GESTIONAR FECHAPRESTAMO, FECHADEVOLUCION
+				-- AGREGAR   (insert) 
+				-- LEER (select) 
+			*GESTIONAR PRESTAMOS, FECHADEVOLUCION
+				-- LEER 
+			*GESTIONAR PRESTAMOS, FECHADEVOLUCION
+				-- LEER 
+
+	EJEMPLARES:
+		OPCIONES: 
+			*GESTIONAR EJEMPLARES 
+			*GESTIONAR EJEMPLARES, ESTADO
+				-- LEER         (select) 
+				-- AGREGAR      (insert)
+				-- ACTUALIZAR   (update)
+			*GESTIONAR UBICACION
+				-- LEER        (select) 
+
+	GENERO: 
+		OPCIONES: 
+			*GESTIONAR GENERO 
+			*GESTIONAR NOMBRE
+				-- AGREGAR (insert)
+				-- LEER	   (select) 
+			*GESTIONAR GENERO, NOMBRE
+				-- LEER 
+	AUTORES: 
+		OPCIONES: 
+			*GESTIONAR AUTORES
+			*GESTIONAR NOMBRE, PAIS
+				-- AGREGAR (insert)
+				-- LEER	   (select) 
+			*GESTIONAR AUTORES,  NOMBRE, PAIS
+				-- LEER 
+			*GESTIONAR NOMBRE
+				-- LEER 
+			*GESTIONAR PAIS
+				-- LEER
